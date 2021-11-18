@@ -23,6 +23,6 @@ public class Product {
     private Integer id;
     private String productName;
     private Integer productAmount;
-    private Integer kiloGram;
-    private  String Producer;
+    private Integer productWeight;
+    private  String supplier;
 }
