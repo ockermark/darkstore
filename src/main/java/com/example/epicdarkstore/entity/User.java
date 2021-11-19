@@ -21,7 +21,7 @@ public class User {
     private Integer id;
     private Integer shopId;
     private String userType;
-
+    private String userKey;
 
 
 }

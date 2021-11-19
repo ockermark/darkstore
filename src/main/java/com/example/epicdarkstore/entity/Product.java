@@ -24,5 +24,5 @@ public class Product {
     private String productName;
     private Integer productAmount;
     private Integer productWeight;
-    private  String supplier;
+    private  String productSupplier;
 }
