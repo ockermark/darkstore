@@ -21,8 +21,16 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String productName;
-    private Integer productAmount;
-    private Integer productWeight;
-    private  String productSupplier;
+    private String name;
+    private String description;
+    private String category;
+    private String pictureLink;
+    private Integer amount;
+    private Integer weight;
+    private String supplier;
+    private Integer retailPrice;
+    private Integer listPrice;
+    private Integer discount;
+
+
 }
