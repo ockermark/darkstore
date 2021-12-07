@@ -20,8 +20,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Integer shopId;
-    private String userType;
-    private String userKey;
+    private String type;
+    private String key;
 
 
 }
