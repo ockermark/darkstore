@@ -1,4 +1,8 @@
 package com.example.epicdarkstore.repository;
 
-public interface OrderRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface OrderRepository extends CrudRepository<OrderRepository, Integer> {
+
+
 }
