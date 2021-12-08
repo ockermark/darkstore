@@ -1,6 +1,5 @@
 package com.example.epicdarkstore.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,21 +16,15 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 
+public class OrderRow {
 
-
-public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String key;
-    private String owner;
-    private String email;
-    private String billingAddress;
-    private String name;
-    private Integer phoneNumber;
-
-
-
-
+    private int id;
+    private int orderId;
+    private int productId;
+    private int amount;
+    private int pricer;
+    private int discount;
 
 }
