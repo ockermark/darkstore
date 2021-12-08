@@ -1,6 +1,5 @@
 package com.example.epicdarkstore.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,10 +19,12 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer id;
     private Integer shopId;
     private String type;
-    private String key;
+    //private String key;
+
 
 
 }

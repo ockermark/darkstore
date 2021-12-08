@@ -21,7 +21,7 @@ public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String key;
+    //private String key;
     private String owner;
     private String email;
     private String billingAddress;

@@ -19,11 +19,11 @@ public class OrderRow {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private int orderId;
-    private int productId;
-    private int amount;
-    private int pricer;
-    private int discount;
+    private Integer id;
+    private Integer orderId;
+    private Integer productId;
+    private Integer amount;
+    private Integer pricer;
+    private Integer discount;
 
 }
