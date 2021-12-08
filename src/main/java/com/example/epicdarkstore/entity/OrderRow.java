@@ -15,7 +15,6 @@ import javax.persistence.Id;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class OrderRow {
 
     @Id
