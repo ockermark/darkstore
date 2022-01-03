@@ -4,17 +4,15 @@ import com.example.epicdarkstore.entity.Supplier;
 
 import java.util.List;
 
-public class SupplierService {
+public interface SupplierService {
+
+    List<Supplier> findAll();
+
+    Supplier findById(Integer id);
 
 
     Supplier saveSupplier(Supplier supplier);
 
-    void deleteSupplier (Integer id);
+    void delete(int id);
 
-    Supplier findByName (String name);
-    Supplier findById (Integer id);
-
-    List<Supplier> findAll();
-
-    }
-
+}

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional
+import java.util.Optional;
 
 
 @Service
@@ -22,7 +22,7 @@ public class SupplierServiceImpl implements SupplierService {
         this.supplierRepository = supplierRepository;
     }
     @Override
-    public List<Supplier> findAll(){
+    public List<Supplier> findAll() {
         List<Supplier> list = new ArrayList<>();
         supplierRepository.findAll().iterator().forEachRemaining(list::add);
         return list;
@@ -31,12 +31,21 @@ public class SupplierServiceImpl implements SupplierService {
     }
 
     @Override
-    public Supplier findById(int id){
+    public Supplier findById(Integer id){
     Optional <Supplier> optionalSupplier = supplierRepository.findById(id);
     if (optionalSupplier.isPresent()) {
         return optionalSupplier.get();
     }
     return null;
     }
+
+    @Override
+    public Supplier saveSupplier(Supplier supplier) {
+        return null;
+    }
+
+    @Override
+    public void delete(int id) {
+
     }
 }
