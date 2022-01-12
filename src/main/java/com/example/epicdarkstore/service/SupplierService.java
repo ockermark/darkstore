@@ -10,6 +10,7 @@ public interface SupplierService {
 
     Supplier findById(Integer id);
 
+    Supplier findByName(String name);
 
     Supplier saveSupplier(Supplier supplier);
 

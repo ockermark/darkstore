@@ -31,6 +31,11 @@ public class SupplierServiceImpl implements SupplierService {
     }
 
     @Override
+    public Supplier findByName(String name) {
+        return null;
+    }
+
+    @Override
     public Supplier findById(Integer id){
     Optional <Supplier> optionalSupplier = supplierRepository.findById(id);
     if (optionalSupplier.isPresent()) {
@@ -41,6 +46,7 @@ public class SupplierServiceImpl implements SupplierService {
 
     @Override
     public Supplier saveSupplier(Supplier supplier) {
+
         return null;
     }
 
